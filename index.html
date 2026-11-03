@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RentHome – Tìm nhà thuê nhanh chóng, uy tín. Căn hộ, nhà phố, biệt thự cho thuê." />
+  <title>RentHome · Tìm nhà thuê dễ dàng</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="RentHome - Trang chủ">
+        <span class="brand-icon" aria-hidden="true">⌂</span>
+        <span class="brand-name">RentHome</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Menu chính">
+        <ul class="nav-list">
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#listings">Nhà cho thuê</a></li>
+          <li><a href="#categories">Loại hình</a></li>
+          <li><a href="#why">Về chúng tôi</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="#">Đăng nhập</a>
+        <a class="btn btn-primary" href="#contact">Đăng tin</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Tìm nhà thuê dễ dàng hơn bao giờ hết</p>
+          <h1 class="hero-title">Ngôi nhà mơ ước<br />đang chờ bạn</h1>
+          <p class="hero-desc">
+            Hàng nghìn căn hộ, nhà phố và biệt thự cho thuê trên toàn quốc.
+            Tìm kiếm theo vị trí, giá cả và tiện nghi chỉ trong vài giây.
+          </p>
+
+          <!-- Search bar -->
+          <form class="search-bar" action="#" method="get" role="search">
+            <div class="search-field">
+              <label for="location">Địa điểm</label>
+              <input type="text" id="location" name="location" placeholder="Quận 1, TP.HCM..." />
+            </div>
+            <div class="search-field">
+              <label for="type">Loại hình</label>
+              <select id="type" name="type">
+                <option value="">Tất cả</option>
+                <option value="apartment">Căn hộ</option>
+                <option value="house">Nhà phố</option>
+                <option value="villa">Biệt thự</option>
+                <option value="room">Phòng trọ</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="price">Mức giá</label>
+              <select id="price" name="price">
+                <option value="">Bất kỳ</option>
+                <option value="under-5">Dưới 5 triệu</option>
+                <option value="5-10">5 – 10 triệu</option>
+                <option value="10-20">10 – 20 triệu</option>
+                <option value="over-20">Trên 20 triệu</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary search-btn">Tìm kiếm</button>
+          </form>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>2.500+</strong>
+              <span>Nhà đang cho thuê</span>
+            </div>
+            <div class="stat">
+              <strong>18.000+</strong>
+              <span>Khách hàng hài lòng</span>
+            </div>
+            <div class="stat">
+              <strong>40+</strong>
+              <span>Thành phố</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURED LISTINGS ========== -->
+    <section id="listings" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Nhà nổi bật</h2>
+          <p class="section-sub">Những căn hộ được quan tâm nhiều nhất tuần này</p>
+        </div>
+
+        <div class="property-grid">
+          <!-- Card 1 -->
+          <article class="property-card">
+            <div class="property-media">
+              <div class="property-img" style="background: linear-gradient(135deg, #94a3b8, #64748b);"></div>
+              <span class="badge badge-rent">Cho thuê</span>
+              <button class="fav-btn" aria-label="Yêu thích">♡</button>
+            </div>
+            <div class="property-body">
+              <div class="property-price">12.5 triệu<span>/tháng</span></div>
+              <h3 class="property-title">Căn hộ Vinhomes Central Park</h3>
+              <p class="property-loc">📍 Bình Thạnh, TP. Hồ Chí Minh</p>
+              <ul class="property-meta">
+                <li>🛏 2 PN</li>
+                <li>🚿 2 WC</li>
+                <li>📐 75 m²</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="property-card">
+            <div class="property-media">
+              <div class="property-img" style="background: linear-gradient(135deg, #a78bfa, #7c3aed);"></div>
+              <span class="badge badge-rent">Cho thuê</span>
+              <button class="fav-btn" aria-label="Yêu thích">♡</button>
+            </div>
+            <div class="property-body">
+              <div class="property-price">8.2 triệu<span>/tháng</span></div>
+              <h3 class="property-title">Studio Masteri Thảo Điền</h3>
+              <p class="property-loc">📍 Quận 2, TP. Hồ Chí Minh</p>
+              <ul class="property-meta">
+                <li>🛏 1 PN</li>
+                <li>🚿 1 WC</li>
+                <li>📐 45 m²</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="property-card">
+            <div class="property-media">
+              <div class="property-img" style="background: linear-gradient(135deg, #34d399, #059669);"></div>
+              <span class="badge badge-rent">Cho thuê</span>
+              <button class="fav-btn" aria-label="Yêu thích">♡</button>
+            </div>
+            <div class="property-body">
+              <div class="property-price">25 triệu<span>/tháng</span></div>
+              <h3 class="property-title">Biệt thự compound Thảo Điền</h3>
+              <p class="property-loc">📍 Quận 2, TP. Hồ Chí Minh</p>
+              <ul class="property-meta">
+                <li>🛏 4 PN</li>
+                <li>🚿 3 WC</li>
+                <li>📐 220 m²</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="property-card">
+            <div class="property-media">
+              <div class="property-img" style="background: linear-gradient(135deg, #fbbf24, #d97706);"></div>
+              <span class="badge badge-rent">Cho thuê</span>
+              <button class="fav-btn" aria-label="Yêu thích">♡</button>
+            </div>
+            <div class="property-body">
+              <div class="property-price">6.5 triệu<span>/tháng</span></div>
+              <h3 class="property-title">Nhà phố hẻm Nguyễn Trãi</h3>
+              <p class="property-loc">📍 Quận 5, TP. Hồ Chí Minh</p>
+              <ul class="property-meta">
+                <li>🛏 3 PN</li>
+                <li>🚿 2 WC</li>
+                <li>📐 90 m²</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-cta">
+          <a class="btn btn-outline" href="#">Xem tất cả nhà →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CATEGORIES ========== -->
+    <section id="categories" class="section section-muted">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Loại hình nhà thuê</h2>
+          <p class="section-sub">Chọn đúng kiểu nhà phù hợp với nhu cầu của bạn</p>
+        </div>
+
+        <div class="category-grid">
+          <a href="#" class="category-card">
+            <span class="cat-icon">🏢</span>
+            <h3>Căn hộ</h3>
+            <p>1.240 tin</p>
+          </a>
+          <a href="#" class="category-card">
+            <span class="cat-icon">🏠</span>
+            <h3>Nhà phố</h3>
+            <p>680 tin</p>
+          </a>
+          <a href="#" class="category-card">
+            <span class="cat-icon">🏡</span>
+            <h3>Biệt thự</h3>
+            <p>210 tin</p>
+          </a>
+          <a href="#" class="category-card">
+            <span class="cat-icon">🚪</span>
+            <h3>Phòng trọ</h3>
+            <p>980 tin</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHY US ========== -->
+    <section id="why" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Tại sao chọn RentHome?</h2>
+          <p class="section-sub">Chúng tôi giúp bạn tìm nhà nhanh, an toàn và minh bạch</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Tìm kiếm siêu tốc</h3>
+            <p>Bộ lọc thông minh theo vị trí, giá, số phòng và tiện nghi.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h3>Tin đăng đã xác thực</h3>
+            <p>Mỗi tin đều được kiểm duyệt, giảm thiểu tin ảo và lừa đảo.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Hỗ trợ 24/7</h3>
+            <p>Đội ngũ tư vấn sẵn sàng giải đáp và hỗ trợ đặt lịch xem nhà.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>An toàn & minh bạch</h3>
+            <p>Thông tin giá, hợp đồng rõ ràng. Không phí ẩn.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <div class="cta-text">
+          <h2>Bạn có nhà muốn cho thuê?</h2>
+          <p>Đăng tin miễn phí, tiếp cận hàng nghìn người đang tìm nhà mỗi ngày.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="#contact">Đăng tin ngay</a>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Liên hệ với chúng tôi</h2>
+          <p class="section-sub">Có câu hỏi? Gửi tin nhắn hoặc gọi trực tiếp.</p>
+          <ul class="contact-list">
+            <li><strong>Hotline:</strong> <a href="tel:19001234">1900 1234</a></li>
+            <li><strong>Email:</strong> <a href="mailto:hello@renthome.vn">hello@renthome.vn</a></li>
+            <li><strong>Địa chỉ:</strong> 123 Nguyễn Huệ, Quận 1, TP.HCM</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Họ tên</label>
+            <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Nội dung</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tôi muốn tư vấn về..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">⌂</span>
+        <span class="brand-name">RentHome</span>
+        <p>Nền tảng tìm nhà thuê uy tín, minh bạch.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Khám phá</h4>
+          <ul>
+            <li><a href="#listings">Nhà cho thuê</a></li>
+            <li><a href="#categories">Loại hình</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Hướng dẫn đăng tin</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 RentHome. Thiết kế bằng HTML5 + CSS3.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
